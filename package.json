@@ -11,9 +11,6 @@
     "test": "vitest run",
     "watch": "vitest"
   },
-  "jest": {
-    "testEnvironment": "jsdom"
-  },
   "dependencies": {},
   "devDependencies": {
     "@testing-library/dom": "^9.3.1",
