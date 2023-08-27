@@ -1,0 +1,17 @@
+export const buttonStyles = {
+  opacity: 0.75,
+  position: `relative`,
+  borderRadius: `4px`,
+  width: `40px`,
+  height: `25px`,
+  display: `flex`,
+  alignItems: `center`,
+  justifyContent: `center`,
+  transition: `opacity 0.3s ease`,
+  border: `none`,
+  outline: `none`,
+  background: `none`,
+  cursor: `pointer`,
+  padding: 0,
+  "&:hover, &:focus": { opacity: 1 },
+} as const;
