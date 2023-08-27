@@ -1,6 +1,6 @@
 import React from "react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { ThemeIconButton } from "./ThemeIconButton";
+import { ThemeIconButton } from "./index";
 import { ThemeIconColorInterface } from "./interfaces";
 import { render, cleanup, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";

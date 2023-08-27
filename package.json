@@ -1,5 +1,6 @@
 {
   "name": "react-simple-animated-dark-mode-button",
+  "author": "Irshadi Bagasputro",
   "private": true,
   "version": "0.1",
   "type": "module",
@@ -41,5 +42,17 @@
       "import": "./dist/react-simple-animated-dark-mode-button.es.js",
       "require": "./dist/react-simple-animated-dark-mode-button.umd.js"
     }
-  }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "animated-button",
+    "dark-mode-button",
+    "animated-dark-mode",
+    "toggle-dark-mode"
+  ],
+  "homepage": "https://github.com/irshadi/react-simple-animated-dark-mode-button/#readme"
 }

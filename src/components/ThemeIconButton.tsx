@@ -5,7 +5,7 @@ import { ThemeIconButtonInterface } from "./interfaces";
 const DEFAULT_DARK = "#FFF";
 const DEFAULT_LIGHT = "#222";
 
-export const ThemeIconButton = ({
+const ThemeIconButton = ({
   onClick,
   isDarkMode,
   color,
@@ -88,3 +88,5 @@ export const ThemeIconButton = ({
     </button>
   );
 };
+
+export default ThemeIconButton;

@@ -5,9 +5,11 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve("src", "src/components/index.jsx"),
-      name: "react-library-scaffold",
-      fileName: (format) => `react-library-scaffold.${format}.js`,
+      entry: path.resolve("src", "components/index.ts"),
+      name: "ThemeIconButton",
+      formats: ["es", "umd"],
+      fileName: (format) =>
+        `react-simple-animated-dark-mode-button.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
