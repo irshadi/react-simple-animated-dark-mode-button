@@ -1,27 +1,45 @@
-# React + TypeScript + Vite
+# React Simple Animated Dark Mode Button
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+![Demo](./docs/react-simple-animated-dark-mode-button-demo.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`react-simple-animated-dark-mode-button` library offers a customizable and visually appealing button component that seamlessly transitions between dark mode and light mode themes. This button is designed to simplify the integration of icon-based animations, enhancing user experience and interactivity within your React applications.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+You can install the library using npm or yarn:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```sh
+npm install react-animated-theme-button
+# or
+yarn add react-animated-theme-button
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage Example
+
+```jsx
+const Exampler = () => {
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
+
+  return (
+    <ThemeIconButton
+      isDarkMode={isDarkMode}
+      onClick={() => setIsDarkMode((_isDarkMode) => !_isDarkMode)}
+      color={{
+        // Give your Icon desired color
+        light: "#5628EE",
+        dark: "rgb(238 177 40)",
+      }}
+    />
+  );
+};
+```
+
+## Props
+
+| Name         | Type       | Default  | Description                                                |
+| ------------ | ---------- | -------- | ---------------------------------------------------------- |
+| `onClick`    | `function` | Required | Function to be called when the button is clicked.          |
+| `isDarkMode` | `boolean`  | Required | Indicates whether the current theme mode is dark or light. |
+| `color`      | `object`   | Optional | Custom colors for the icon.                                |
