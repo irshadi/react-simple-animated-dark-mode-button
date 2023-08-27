@@ -1,8 +1,8 @@
 {
   "name": "react-simple-animated-dark-mode-button",
   "author": "Irshadi Bagasputro",
-  "private": true,
-  "version": "0.1",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
