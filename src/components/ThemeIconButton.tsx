@@ -8,12 +8,12 @@ const DEFAULT_LIGHT = "#222";
 const ThemeIconButton = ({
   onClick,
   isDarkMode,
-  color,
+  color = {
+    dark: DEFAULT_DARK,
+    light: DEFAULT_LIGHT,
+  },
 }: ThemeIconButtonInterface) => {
-  const {
-    dark: buttonColorModeDark = DEFAULT_DARK,
-    light: buttonColorModeLight = DEFAULT_LIGHT,
-  } = color;
+  const { dark: buttonColorModeDark, light: buttonColorModeLight } = color;
 
   const isPropsValid: boolean = validateProps({
     onClick,
