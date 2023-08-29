@@ -2,7 +2,7 @@
   "name": "react-simple-animated-dark-mode-button",
   "author": "Irshadi Bagasputro",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "build": "tsup",
