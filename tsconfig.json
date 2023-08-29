@@ -1,28 +1,29 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "React Library",
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "composite": false,
     "declaration": true,
-    "skipLibCheck": true,
+    "declarationMap": false,
     "esModuleInterop": true,
-    "declarationMap": true,
-    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "jsx": "react-jsx",
+    "lib": ["ES2015", "DOM"],
+    "module": "ESNext",
+    "target": "es6",
+    "baseUrl": "./src",
     "paths": {
-      "react-simple-animated-dark-mode-button": ["src/components/index.ts"]
-    },
-    "typeRoots": ["node_modules/@types", "src/components/interfaces.d.ts"]
+      "src/*": ["*"]
+    }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
 }
